@@ -1,4 +1,4 @@
-main.name = "Visao"
+main.name = "Pwnagotchi"
 main.lang = "pt-br"
 main.whitelist = [
  "EXAMPLE_NETWORK",
@@ -9,13 +9,13 @@ main.whitelist = [
 main.plugins.grid.enabled = true
 main.plugins.grid.report = true
 main.plugins.grid.exclude = [ "YourHomeNetworkHere",]
-
+#Age
 main.plugins.age.enabled = true
 main.plugins.age.age_x_coord = 0
 main.plugins.age.age_y_coord = 90
 main.plugins.age.int_x_coord = 67
 main.plugins.age.int_y_coord = 90
-
+#Xp
 main.plugins.exp.enabled = true
 main.plugins.exp.lvl_x_coord = 0
 main.plugins.exp.lvl_y_coord = 81
@@ -119,7 +119,7 @@ main.log.rotation.enabled = true
 main.log.rotation.size = "10M"
 
 ui.display.enabled = true
-ui.display.type = "waveshare_3"
+ui.display.type = "waveshare_3" #My waveshare here
 ui.display.color = "white"
 ui.display.rotation = 180
 
