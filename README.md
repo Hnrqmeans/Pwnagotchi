@@ -11,16 +11,23 @@ Features AI-Powered Learning: Improves handshake capture strategies over time Pa
 
 Hardware Components Component Specification Purpose Raspberry Pi Zero W Main computing unit Display Waveshare 2.13" e-Paper HAT Rev2.1 V4 Status visualization Power Supply UPS-Lite v1.3 Battery backup & power management Storage MicroSD Card (16GB+ recommended) Operating system & data
 
-First Configuration
+Initial Configuration
 
-Basic Settings
-main.name = "pwnagotchi" main.lang = "pt-br" main.shutdown = 60
+main.name = "pwnagotchi"
+main.lang = "pt-br"
+main.whitelist = [
+  "EXAMPLE_NETWORK",
+  "ANOTHER_EXAMPLE_NETWORK",
+  "fo:od:ba:be:fo:od",
+  "fo:od:ba"
+]
 
-Network Whitelist
-main.whitelist = [ "HOME_NETWORK_SSID", "fo:od:ba:be:fo:od", "fo:od:ba" ]
+main.plugins.grid.enabled = true
+main.plugins.grid.report = true
+main.plugins.grid.exclude = [
+  "YourHomeNetworkHere"
+]
 
-Display Configuration
-ui.display.enabled = true ui.display.type = "waveshare_3" ui.display.color = "black" ui.fps = 1.0
-
-Plugins
-main.plugins.grid.enabled = true main.plugins.grid.report = true main.plugins.grid.exclude = [ "YourHomeNetworkHere" ]
+ui.display.enabled = true
+ui.display.type = "waveshare_3"
+ui.display.color = "black"
